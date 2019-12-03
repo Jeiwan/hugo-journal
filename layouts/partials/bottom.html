@@ -21,6 +21,10 @@
           <a itemprop="sameAs" href="https://twitter.com/{{ .Site.Params.twitterUsername }}" title="Twitter">TW</a>
           {{- end}}
 
+          {{ if isset .Site.Params "telegramusername" -}}
+          <a itemprop="sameAs" href="https://t.me/{{ .Site.Params.telegramusername }}" title="Telegram">TG</a>
+          {{- end}}
+
           {{ if isset .Site.Params "gpg" -}}
           <a itemprop="sameAs" href="{{ .Site.Params.gpg.link }}" title="GPG {{ .Site.Params.gpg.key }} (fingerprint: {{ .Site.Params.gpg.fingerprint }})">GPG</a>
           {{- end }}
