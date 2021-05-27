@@ -15,11 +15,13 @@
   <meta property="og:title" content="{{ .Site.Title }}">
   <meta property="og:type" content="website">
   <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="keywords" content="{{ .Site.Params.keywords }}">
   {{- else -}}
   <title>{{ .Title }} - {{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
   <meta property="og:type" content="article">
   <meta name="description" content="{{ .Description }}">
+  <meta name="keywords" content="{{ .Site.Params.keywords }}">
   {{- end }}
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Arvo:400,700">
