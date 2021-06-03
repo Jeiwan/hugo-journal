@@ -253,3 +253,8 @@ h6 {
 .hljs {
   font-size: 0.875rem;
 }
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+}
